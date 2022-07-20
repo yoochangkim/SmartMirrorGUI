@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>781</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PlatFutures SmartMirror</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="captureButton">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>520</y>
+      <width>80</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Capture</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="analysisButton">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>520</y>
+      <width>80</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Analysis</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="backgroundImg">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>50</y>
+      <width>331</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/newPrefix/face.jpg);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="TL_Buttion">
+    <property name="geometry">
+     <rect>
+      <x>817</x>
+      <y>190</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>#TL</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="TC_Button">
+    <property name="geometry">
+     <rect>
+      <x>887</x>
+      <y>220</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>#TC</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="TR_Button">
+    <property name="geometry">
+     <rect>
+      <x>957</x>
+      <y>190</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>#TR</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ML_Button">
+    <property name="geometry">
+     <rect>
+      <x>817</x>
+      <y>320</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>#ML</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="MC_Button">
+    <property name="geometry">
+     <rect>
+      <x>887</x>
+      <y>350</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>#MC</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="MR_Button">
+    <property name="geometry">
+     <rect>
+      <x>957</x>
+      <y>320</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>#MR</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BL_Button">
+    <property name="geometry">
+     <rect>
+      <x>817</x>
+      <y>390</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>#BL</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BC_Button">
+    <property name="geometry">
+     <rect>
+      <x>887</x>
+      <y>440</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>#BC</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BR_Button">
+    <property name="geometry">
+     <rect>
+      <x>957</x>
+      <y>390</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>#BR</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="manualBotton">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>24</y>
+      <width>90</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>수동촬영</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="resultButton">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>24</y>
+      <width>90</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>분석모드</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="modelButton">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>520</y>
+      <width>80</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Model</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>520</y>
+      <width>261</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;640 x 480 (VGA 4:3)&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;right&quot;&gt;5M 1080P (1/4&amp;quot;, OV5647) / 36mm / FOV: 70&lt;/p&gt;&lt;p align=&quot;right&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="camButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>520</y>
+      <width>80</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CAM ON</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="camView">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>640</width>
+      <height>480</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="logoImg">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>660</y>
+      <width>300</width>
+      <height>72</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="loadImg">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>600</y>
+      <width>128</width>
+      <height>128</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1100</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
